@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="POST" action="/todos">
+      <input type="text" name="title">
+      <input type="submit">
+    </form>
+    <ul>
+      <% todos.forEach(function(todo){ %>
+      <li><%= todo.title %>
+        <form method="POST" action="/todos/<%= todo._id %>"> 
+          <input type="hidden" name="_method" value="PUT">
+          <input type="checkbox" name="done" <%= todo.done ? 'checked' : '' %>>
+          <input type="submit" value="update">
+        </form>
+        <form method="POST" action="/todos/<%= todo._id %>"> 
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete">
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
