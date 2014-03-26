@@ -23,3 +23,14 @@ Mallar
 Statiska filer såsom javascript, bilder och css ska in i mappen `public`
 
 Mallar för sidor ska in under mappen `views` och ska vara i formatet `EJS` ([Embedded JavaScript](http://embeddedjs.com/))
+
+Forka
+---
+
+Har du redan forkat det här repot kan du ta in ändringar jag gjort med kommandot
+
+`git fetch upstream`
+
+och foga in ändringarna med
+
+`git merge upstream/master`
