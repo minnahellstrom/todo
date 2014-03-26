@@ -27,7 +27,9 @@ Mallar för sidor ska in under mappen `views` och ska vara i formatet `EJS` ([Em
 Forka
 ---
 
-Har du redan forkat det här repot kan du ta in ändringar jag gjort med kommandot
+Har du redan forkat det här repot kan du ta in ändringar jag gjort med följande kommandon:
+
+`git remote add upstream https://github.com/niklasek/todo.git`
 
 `git fetch upstream`
 
