@@ -1,6 +1,18 @@
 todo
 ====
 
+Forka
+---
+
+Har du redan forkat det här repot kan du ta in ändringar jag gjort med följande kommandon:
+
+`git remote add upstream https://github.com/niklasek/todo.git`
+
+`git fetch upstream`
+
+och foga in ändringarna med
+
+`git merge upstream/master`
 
 Installation
 ---
@@ -15,7 +27,7 @@ Ge sedan kommandot `cd todo` för att komma in i mappen.
 
 Med `npm install` laddar du ner alla moduler som behövs för att starta servern.
 
-`npm start` sätter sena i gång servern.
+`npm start` sätter sen i gång servern.
 
 Mallar
 ---
@@ -24,15 +36,4 @@ Statiska filer såsom javascript, bilder och css ska in i mappen `public`
 
 Mallar för sidor ska in under mappen `views` och ska vara i formatet `EJS` ([Embedded JavaScript](http://embeddedjs.com/))
 
-Forka
----
 
-Har du redan forkat det här repot kan du ta in ändringar jag gjort med följande kommandon:
-
-`git remote add upstream https://github.com/niklasek/todo.git`
-
-`git fetch upstream`
-
-och foga in ändringarna med
-
-`git merge upstream/master`
