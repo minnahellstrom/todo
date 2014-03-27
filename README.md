@@ -30,4 +30,7 @@ Statiska filer såsom javascript, bilder och css ska in i mappen `public`
 
 Mallar för sidor ska in under mappen `views` och ska vara i formatet `EJS` ([Getting Started with EJS](http://embeddedjs.com/getting_started.html))
 
+Hjälp!?
+---
 
+En genomgång av hur man kommer i gång finns här: [http://youtu.be/JHHwewCBhEY](http://youtu.be/JHHwewCBhEY)
